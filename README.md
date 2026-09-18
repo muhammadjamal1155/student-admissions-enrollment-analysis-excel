@@ -1,234 +1,453 @@
-# 📊 Student Admissions & Enrollment Analysis – Excel Dashboard
+# 📊 Student Admissions & Enrollment Analysis – Excel
 
-An interactive **Excel Data Analysis project** designed to analyze student admissions, enrollment status, academic outcomes, and institutional performance across different campuses, departments, courses, and time periods.
+An interactive **Excel-based Student Admissions & Enrollment Analysis Dashboard** developed to analyze student admissions, enrollment patterns, academic outcomes, voucher status, and institutional performance across campuses, departments, and academic programs.
 
-The project transforms raw student records into structured summaries, PivotTables, KPIs, and interactive visualizations to make enrollment trends and student outcomes easier to understand.
+The project transforms student admission and enrollment reports into structured **Excel Tables, PivotTables, KPI cards, slicers, and interactive visualizations**, providing management with a clear overview of student trends and performance.
 
----
-
-## 📌 Project Overview
-
-This project analyzes student admission and enrollment data to answer key questions such as:
-
-- How have student admissions changed over time?
-- Which campuses receive the highest number of admissions?
-- Which departments and programs have the most students?
-- What is the distribution of different student statuses?
-- How many students have matured or dropped out from different batches?
-- What is the distribution of paid, unpaid, and unrecorded voucher statuses?
-- How can management quickly compare enrollment performance across different dimensions?
-
-The final result is an interactive **Excel dashboard** that provides a consolidated view of student admissions and enrollment performance.
-
----
-
-## 🛠️ Tools & Skills Used
-
-- **Microsoft Excel**
-- PivotTables
-- PivotCharts
-- Excel Tables
-- Slicers
-- KPI Cards
-- Data Cleaning
-- Data Aggregation
-- Dashboard Design
-- Data Visualization
-- Trend Analysis
-
----
-
-## 📂 Workbook Structure
-
-The Excel workbook contains the following worksheets:
-
-| Sheet | Description |
-|---|---|
-| `Raw_Admissions` | Detailed student admission records used as the primary dataset |
-| `Raw_Status` | Raw student enrollment and academic status information |
-| `Summary_Status` | Aggregated student status, dropout, and maturity information |
-| `Campus_Wise` | Student admission analysis by campus |
-| `Course_Wise` | Admission analysis across different courses/programs |
-| `Department_Wise` | Department-level admission summary |
-| `Pivot Tables` | PivotTables used to calculate and organize dashboard metrics |
-| `Dashboard` | Final interactive dashboard containing KPIs and visualizations |
-
----
-
-## 📊 Dashboard Features
-
-The dashboard provides an interactive overview of student admissions and enrollment data through multiple KPIs and visualizations.
-
-### Key Analysis Areas
-
-**Admissions Trend Analysis**
-- Monthly admission trends
-- Year-wise admission comparison
-- Historical enrollment patterns
-
-**Student Status Analysis**
-- Enrolled students
-- Course completion
-- Degree awarded
-- Withdrawals
-- Suspensions
-- Frozen students
-- Registration cancellations
-
-**Academic Outcome Analysis**
-- Mature students
-- Student dropouts
-- Batch-wise outcome comparison
-
-**Institutional Analysis**
-- Campus-wise admissions
-- Department-wise admissions
-- Program/course-wise admissions
-
-**Financial/Administrative Analysis**
-- Paid voucher records
-- Unpaid voucher records
-- Voucher status not recorded
-
----
-
-## 📈 Dataset Overview
-
-The main admissions dataset contains approximately **8,800 student records** with information including:
-
-- Student ID
-- Registration Number
-- Student Name
-- Campus
-- Department
-- Course / Program
-- Batch
-- Contact Information
-- Admission Information
-- Enrollment Status
-- Academic Status
-
-The project also contains summarized student-status data for analyzing enrollment progression and academic outcomes.
-
----
-
-## 🏫 Campus-Wise Analysis
-
-Admissions are compared across multiple campuses to identify campuses with higher and lower student enrollment.
-
-The analysis includes campuses such as:
-
-- New Garden Town Lahore
-- Johar Town Lahore
-- Karachi
-- Multan
-- Islamabad
-- Rawalpindi
-- Gujranwala
-- Faisalabad
-- Bahawalpur
-- Sahiwal
-- Sheikhupura
-- Sialkot
-- Other campuses
-
-This helps identify the geographical distribution of student admissions.
-
----
-
-## 🎓 Department-Wise Analysis
-
-Student admissions are analyzed across departments including:
-
-- Department of Culinary Arts
-- Department of Hospitality Management
-- Department of Baking and Patisserie
-- Department of Travel, Tourism, Airline & Aviation Management
-- Department of Life Skills
-- Department of Food Nutrition and Safety Sciences
-- Department of Distance Learning
-
-This allows quick comparison of enrollment demand across academic departments.
-
----
-
-## 📚 Course-Wise Analysis
-
-The project compares admissions across different academic programs, including:
-
-- Diploma in Culinary Arts
-- Graduate Diploma in International Culinary Arts
-- Certificate in Professional Cookery
-- Diploma in Hospitality and Tourism Management
-- Associate Degree in Tourism and Hospitality Management
-- BS in Tourism & Hospitality Management
-- Diploma in International Baking and Patisserie
-- Certificate in Professional Baking
-- Diploma in Hotel Operations
-- Travel and Airline Management programs
-- Other certificate, diploma, and degree programs
-
----
-
-## 🔄 Data Analysis Workflow
-
-```text
-Raw Student Data
-       │
-       ▼
-Data Cleaning & Organization
-       │
-       ▼
-Excel Tables
-       │
-       ▼
-PivotTables
-       │
-       ├── Admission Trends
-       ├── Student Status
-       ├── Voucher Status
-       ├── Department Analysis
-       ├── Program Analysis
-       └── Batch Outcomes
-       │
-       ▼
-KPIs + PivotCharts
-       │
-       ▼
-Interactive Excel Dashboard
-```
-
----
-
-## 💡 Key Insights Supported by the Dashboard
-
-The dashboard makes it possible to quickly identify:
-
-- Admission growth or decline across different years
-- Seasonal/monthly admission patterns
-- Highest-enrollment campuses
-- Most popular academic programs
-- Departments contributing the largest number of admissions
-- Distribution of current student statuses
-- Batch-level dropout and maturity patterns
-- Voucher payment status distribution
-
-These insights can support management in **enrollment monitoring, academic planning, campus comparison, and operational decision-making**.
+> **Note:** The original dataset contains confidential student information. Therefore, raw student-level data is **not included** in this public repository. Only the dashboard and non-sensitive analytical outputs are shared for portfolio demonstration purposes.
 
 ---
 
 ## 📸 Dashboard Preview
 
-Add a screenshot of the final dashboard to the repository and place it inside an `images` folder:
+![COTHM Student Admissions & Enrollment Dashboard](Dashboard/Dashboard.jpg)
 
-```text
-images/
-└── dashboard.png
+---
+
+## 🎯 Project Objectives
+
+The main objective of this project is to convert student admission and enrollment records into a structured reporting solution that can help management:
+
+- Monitor overall student admissions
+- Analyze monthly and yearly admission trends
+- Compare admissions across campuses
+- Identify high-enrollment courses and programs
+- Analyze department-wise admissions
+- Monitor student academic/status outcomes
+- Track first-voucher payment status
+- Compare mature and dropout students
+- Filter and explore results interactively
+- Support data-driven academic and administrative decisions
+
+---
+
+## 📂 Data Sources
+
+The analysis was developed using multiple institutional student reports, including:
+
+- New Admission Report with Fee Status
+- Student Status Wise Listing
+- Student Summary Status Wise
+- Student Enrollment Campus Wise
+- Student Enrollment Course/Program Wise
+- Student Enrollment Department Wise
+
+These reports were consolidated and transformed into structured Excel tables for analysis.
+
+---
+
+## 🔐 Data Privacy
+
+The source reports contain confidential student information such as:
+
+- Student names
+- Registration numbers
+- CNIC information
+- Contact numbers
+- Email addresses
+- Mailing addresses
+- Admission and academic information
+
+For privacy and confidentiality reasons, the **raw source sheets and student-level datasets are not published in this repository**.
+
+The repository is intended to demonstrate the **reporting methodology, dashboard design, PivotTable analysis, KPI development, and Excel visualization skills** used in the project.
+
+---
+
+## 📊 Dataset Overview
+
+The detailed admissions dataset used for the dashboard contains approximately:
+
+| Metric | Value |
+|---|---:|
+| Detailed Admission Records | 8,838 |
+| Campuses in Campus Report | 44 |
+| Courses / Programs | 38 |
+| Departments | 7 |
+| Analysis Period | 2021–2026 |
+
+> Different institutional reports may cover different reporting populations and scopes. Therefore, totals from separate portal reports are not assumed to be directly comparable unless they represent the same reporting population.
+
+---
+
+## 🧹 Data Preparation
+
+Before building the analysis, the source data was cleaned and transformed in Excel.
+
+### Admission Date Cleaning
+
+The original admission date field was converted from text into a valid Excel date using:
+
+```excel
+=DATEVALUE([@[Admission Date]])
 ```
 
-Then display it here:
+A separate **Clean Admission Date** field was created for time-based analysis.
 
-![Student Admissions Dashboard](images/dashboard.png)
+### Month
+
+```excel
+=DATE(
+    YEAR([@[Clean Admission Date]]),
+    MONTH([@[Clean Admission Date]]),
+    1
+)
+```
+
+The field was formatted as:
+
+```text
+mmm-yyyy
+```
+
+### Year
+
+```excel
+=YEAR([@[Clean Admission Date]])
+```
+
+### Week Number
+
+```excel
+=WEEKNUM([@[Clean Admission Date]],2)
+```
+
+These helper fields allow admissions to be analyzed at **monthly, yearly, and weekly levels**.
+
+---
+
+## 🧱 Excel Data Model Structure
+
+The workbook uses multiple structured Excel Tables for different reporting areas.
+
+| Excel Table | Purpose |
+|---|---|
+| `AdmissionsData` | Detailed admission and first-voucher analysis |
+| `StatusData` | Student status analysis |
+| `SummaryStatusData` | Mature and dropout outcome analysis |
+| `CampusData` | Campus-level enrollment analysis |
+| `CourseData` | Course/program-level enrollment analysis |
+| `DepartmentData` | Department-level enrollment analysis |
+
+Separating these reporting areas makes the workbook easier to maintain and allows PivotTables to be built according to the scope of each source report.
+
+---
+
+## 📌 Key Performance Indicators
+
+The dashboard contains KPI cards for important student and payment metrics.
+
+### Total Admissions
+
+Displays the number of student admission records available within the detailed admissions dataset.
+
+### Paid Vouchers
+
+Tracks students whose first voucher status is recorded as **Paid**.
+
+### Unpaid Vouchers
+
+Shows students whose first voucher remains **Unpaid**.
+
+### Voucher Status Not Recorded
+
+Identifies admission records where first-voucher information was not available and was standardized as:
+
+```text
+Not Recorded
+```
+
+### Mature Students
+
+Displays the total number of students categorized as **Mature** in the Student Summary Status report.
+
+### Dropout Students
+
+Displays the total number of students categorized as **Drop Out** in the Student Summary Status report.
+
+---
+
+## 📈 Dashboard Visualizations
+
+The analysis includes multiple PivotTable-based visualizations.
+
+### 1. Monthly Admission Trend
+
+**Chart:** Line Chart with Markers
+
+Tracks changes in student admissions over time and highlights monthly admission patterns.
+
+---
+
+### 2. Year-wise Admission Comparison
+
+**Chart:** Clustered Column Chart
+
+Compares total student admissions across different years.
+
+---
+
+### 3. Student Status Distribution
+
+**Chart:** Clustered Bar Chart
+
+Analyzes students across different status categories such as:
+
+- Enrolled Registered Student
+- Course Completed
+- Degree Awarded
+- Withdrawal Student
+- Freeze Student
+- Suspend
+- Cancel Student Registration
+- Campus/Program changes
+
+---
+
+### 4. Batch-wise Mature vs Dropout Students
+
+**Chart:** Clustered Column Chart
+
+Compares **Mature** and **Drop Out** students across batches.
+
+A **Top 10 filter based on dropout count** is used to keep the visualization readable and highlight batches requiring closer attention.
+
+---
+
+### 5. First Voucher Status Distribution
+
+**Chart:** Pie Chart
+
+Shows the distribution of first-voucher records across:
+
+- Paid
+- Unpaid
+- Not Recorded
+
+This provides a quick overview of first-voucher payment status.
+
+---
+
+### 6. Top Programs by Admissions
+
+**Chart:** Clustered Bar Chart
+
+Highlights the programs receiving the highest number of student admissions.
+
+---
+
+### 7. Department-wise Admissions
+
+**Chart:** Clustered Bar Chart
+
+Compares admission volume across academic departments.
+
+---
+
+### 8. Top Campuses by Admissions
+
+**Chart:** Clustered Bar Chart
+
+Uses the campus-wise enrollment report to identify campuses with the highest admission volume.
+
+---
+
+### 9. Course/Program-wise Enrollment
+
+**Chart:** Clustered Bar Chart
+
+Uses the aggregated course/program report to compare enrollment across academic programs.
+
+---
+
+## 🎛️ Interactive Filtering
+
+The dashboard is designed to support interactive filtering through **Excel Slicers**.
+
+Slicers can be connected to compatible PivotTables that share the same underlying data source/Pivot Cache.
+
+For example, filters based on the detailed admissions dataset can be used to interactively analyze:
+
+- Year
+- Voucher Status
+- Campus
+- Department
+- Course / Program
+
+KPI cards can also be linked to PivotTable result cells so that their displayed values update automatically when the connected PivotTables are filtered.
+
+> PivotTables created from different source tables cannot automatically share the same slicer unless the tables are integrated through an appropriate Excel Data Model/relationship structure.
+
+---
+
+## 📊 PivotTable Analysis
+
+PivotTables are used as the analytical layer between the raw reports and dashboard.
+
+Examples include:
+
+```text
+Month
+   ↓
+Count of Student ID
+```
+
+```text
+Year
+   ↓
+Count of Student ID
+```
+
+```text
+Student Status
+   ↓
+Count of Student ID
+```
+
+```text
+Batch
+   ↓
+Sum of Mature
+Sum of Drop Out
+```
+
+```text
+Voucher Status
+   ↓
+Count of Student ID
+```
+
+```text
+Course / Program
+   ↓
+Count of Student ID
+```
+
+This structure allows the dashboard to remain dynamic while avoiding hard-coded analytical results.
+
+---
+
+## 📁 Workbook Structure
+
+The working Excel solution is organized into dedicated data, analysis, and presentation sheets.
+
+```text
+Student_Comparison_Report
+│
+├── Raw_Admissions
+├── Raw_Status
+├── Summary_Status
+├── Campus_Wise
+├── Course_Wise
+├── Department_Wise
+├── Comparison
+└── Dashboard
+```
+
+### Raw / Source Sheets
+
+Contain imported and structured data used for analysis.
+
+### Comparison / Pivot Analysis
+
+Contains PivotTables and supporting analysis used to generate dashboard visuals and KPI values.
+
+### Dashboard
+
+Provides the final management-facing interface containing:
+
+- KPI cards
+- Slicers
+- Trend analysis
+- Status analysis
+- Payment analysis
+- Academic outcome analysis
+- Campus, department, and program comparisons
+
+---
+
+## 🛠️ Tools & Techniques Used
+
+The project demonstrates practical use of:
+
+- Microsoft Excel
+- Excel Tables
+- PivotTables
+- PivotCharts
+- Slicers
+- Structured References
+- Date Cleaning
+- Data Standardization
+- `COUNTIF`
+- `COUNTA`
+- `DATEVALUE`
+- `YEAR`
+- `MONTH`
+- `WEEKNUM`
+- Top-N Analysis
+- KPI Design
+- Dashboard Layout & Formatting
+- Interactive Reporting
+- Data Validation and Quality Checking
+
+---
+
+## 💡 Key Analytical Areas
+
+The dashboard enables analysis across four major areas:
+
+### Admissions Analysis
+Understand how admissions change over time and identify important monthly and yearly patterns.
+
+### Academic Outcome Analysis
+Monitor student status, maturity, dropout, withdrawal, suspension, and other academic outcomes.
+
+### Financial Status Analysis
+Track first-voucher payment status and identify records where payment information is unavailable.
+
+### Institutional Performance Analysis
+Compare campuses, departments, courses, programs, and batches to identify enrollment concentration and performance patterns.
+
+---
+
+## ⚠️ Reporting Considerations
+
+Some source reports originate from different modules of the institutional student portal and may use different reporting criteria.
+
+For example, the campus-wise report may represent a broader institutional population than the detailed admission report.
+
+Therefore:
+
+- Report totals should be interpreted within their respective reporting scope.
+- Aggregated reports should not automatically be reconciled with detailed reports.
+- Differences in totals do not necessarily indicate data-quality issues.
+- Cross-report comparisons should only be performed after confirming that reporting definitions and populations are consistent.
+
+---
+
+## 🚀 Future Improvements
+
+Potential enhancements to the project include:
+
+- Integrating source tables through the Excel Data Model
+- Creating relationships between admission and status datasets
+- Developing slicers that control multiple related reporting areas
+- Adding admission growth KPIs
+- Adding year-over-year comparisons
+- Adding dropout-rate analysis
+- Adding campus-level drill-down reporting
+- Automating source-data preparation using Power Query
+- Migrating the reporting model to Power BI for more advanced interactive analytics
 
 ---
 
@@ -237,37 +456,30 @@ Then display it here:
 ```text
 student-admissions-enrollment-analysis-excel/
 │
-├── Student_Comparison_Report.xlsx
-├── README.md
+├── Dashboard/
+│   └── Dashboard.jpg
 │
-└── images/
-    └── dashboard.png
+├── PivotTables/
+│   └── [Non-confidential analytical outputs]
+│
+└── README.md
 ```
 
----
-
-## 🚀 How to Use
-
-1. Download or clone this repository.
-2. Open `Student_Comparison_Report.xlsx` in Microsoft Excel.
-3. Navigate to the **Dashboard** worksheet.
-4. Use the available slicers and filters to explore the data.
-5. Review PivotTables and supporting sheets for detailed analysis.
+> Confidential raw student data is intentionally excluded from the repository.
 
 ---
 
-## 🎯 Project Purpose
-
-This project demonstrates practical **Excel data analysis and dashboard development skills**, including transforming raw institutional data into meaningful business insights using PivotTables, KPIs, slicers, and interactive visualizations.
-
-It is designed as a portfolio project showcasing skills relevant to **Data Analyst, Business Intelligence, Reporting, and MIS roles**.
-
----
-
-## 👤 Author
+## 👨‍💻 Author
 
 **Muhammad Jamal**  
-Data Science Graduate
+Data Science Graduate | Data Analytics & Business Intelligence
 
-- LinkedIn: https://www.linkedin.com/in/muhammad-jamal-a08241240
-- GitHub: https://github.com/muhammadjamal1155
+This project was developed as a practical Excel reporting solution for analyzing student admissions, enrollment, payment status, and academic outcomes while maintaining the confidentiality of student-level information.
+
+---
+
+## 📌 Disclaimer
+
+This repository is shared for **portfolio and educational demonstration purposes**.
+
+The underlying institutional student data is confidential and is therefore not publicly distributed. Dashboard screenshots and analytical outputs have been shared only where they do not expose personally identifiable student information.
